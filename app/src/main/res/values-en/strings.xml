@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Text Tetris</string>
+
+    <!-- Game Title -->
+    <string name="app_title">TEXTTETRIS</string>
+
+    <!-- Buttons -->
+    <string name="btn_start_game">START GAME</string>
+    <string name="btn_play_again">PLAY AGAIN</string>
+
+    <!-- Score Display Labels -->
+    <string name="label_score">SCORE</string>
+    <string name="label_level">LEVEL</string>
+    <string name="label_high">HIGH</string>
+    <string name="label_next">NEXT</string>
+
+    <!-- Game State Text -->
+    <string name="game_over_text">GAME OVER</string>
+    <string name="paused_text">PAUSED</string>
+
+    <!-- Control Hints -->
+    <string name="control_hints">← → MOVE   ↑ ROTATE   ↓ DROP   ✕✕ PAUSE</string>
+
+    <!-- Score Format -->
+    <string name="score_format">Score: %1$d</string>
+</resources>

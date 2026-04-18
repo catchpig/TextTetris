@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">文字俄罗斯方块</string>
+
+    <!-- Game Title -->
+    <string name="app_title">文字俄罗斯方块</string>
+
+    <!-- Buttons -->
+    <string name="btn_start_game">开始游戏</string>
+    <string name="btn_play_again">再玩一次</string>
+
+    <!-- Score Display Labels -->
+    <string name="label_score">得分</string>
+    <string name="label_level">等级</string>
+    <string name="label_high">最高</string>
+    <string name="label_next">下一个</string>
+
+    <!-- Game State Text -->
+    <string name="game_over_text">游戏结束</string>
+    <string name="paused_text">暂停</string>
+
+    <!-- Control Hints -->
+    <string name="control_hints">← → 移动   ↑ 旋转   ↓ 下落   ✕✕ 暂停</string>
+
+    <!-- Score Format -->
+    <string name="score_format">得分：%1$d</string>
+</resources>
