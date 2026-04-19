@@ -2,6 +2,13 @@ package com.texttetris.domain.model
 
 import androidx.compose.ui.graphics.Color
 
+/**
+ * 俄罗斯方块颜色枚举
+ *
+ * 定义每种方块类型对应的颜色
+ *
+ * @property rgb 颜色的 RGB 值（十六进制）
+ */
 enum class TetrominoColor(val rgb: Long) {
     CYAN(0xFF00FFFF),   // I piece
     YELLOW(0xFFFFFF00),  // O piece

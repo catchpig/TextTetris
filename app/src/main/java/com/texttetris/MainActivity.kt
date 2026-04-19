@@ -15,6 +15,14 @@ import androidx.core.view.WindowCompat
 import com.texttetris.ui.screens.GameScreen
 import com.texttetris.ui.theme.TextTetrisTheme
 
+/**
+ * 游戏主 Activity
+ *
+ * 全屏沉浸式游戏界面
+ * - 隐藏系统状态栏和导航栏
+ * - 保持屏幕常亮
+ * - 使用 Jetpack Compose 构建 UI
+ */
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

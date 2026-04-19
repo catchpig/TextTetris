@@ -8,6 +8,16 @@ import com.texttetris.data.repository.GameRepositoryImpl
 import com.texttetris.domain.repository.GameRepository
 import com.texttetris.util.SoundManager
 
+/**
+ * GameViewModel 工厂类
+ *
+ * 负责创建 GameViewModel 实例，并注入所需依赖
+ * - GameDatabase 单例
+ * - GameRepository 实现
+ * - SoundManager 实例
+ *
+ * @param context Android 上下文，用于创建依赖
+ */
 class GameViewModelFactory(
     private val context: Context
 ) : ViewModelProvider.Factory {

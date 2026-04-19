@@ -14,6 +14,14 @@ import com.texttetris.domain.model.Tetromino
 import com.texttetris.domain.model.toComposeColor
 import com.texttetris.ui.theme.*
 
+/**
+ * 下一个方块预览组件
+ *
+ * 在计分板中显示即将出现的方块，帮助玩家提前规划
+ *
+ * @param tetromino 下一个方块（null 时显示空白）
+ * @param modifier Compose 修饰符
+ */
 @Composable
 fun NextPiecePreview(
     tetromino: Tetromino?,

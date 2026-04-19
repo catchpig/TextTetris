@@ -81,3 +81,8 @@ Data Layer (data/)
 - Room 的 KSP 配置在 `app/build.gradle.kts` 的 `defaultConfig` 块中
 - 游戏循环使用 `viewModelScope.launch` + `delay()` 实现
 - 方块旋转带有 wall kick 补偿逻辑
+
+## 语言规范
+
+- 所有回复和注释统一使用中文
+- 代码注释使用中文说明业务逻辑

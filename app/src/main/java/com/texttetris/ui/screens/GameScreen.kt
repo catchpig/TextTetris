@@ -32,6 +32,20 @@ import com.texttetris.ui.viewmodel.GameViewModel
 import com.texttetris.ui.viewmodel.GameViewModelFactory
 import com.texttetris.R
 
+/**
+ * 游戏主界面
+ *
+ * 完整的游戏界面，包含：
+ * - 背景网格
+ * - 计分板（分数、等级、最高分、下一个方块预览）
+ * - 游戏棋盘
+ * - 手势检测（滑动、拖拽）
+ * - 游戏状态覆盖层（开始/结束）
+ *
+ * 自动适配横竖屏：竖屏时垂直布局，横屏时水平布局
+ *
+ * @param viewModel 游戏 ViewModel，用于状态管理
+ */
 @Composable
 fun GameScreen(
     viewModel: GameViewModel = viewModel(factory = GameViewModelFactory(LocalContext.current))
@@ -141,6 +155,11 @@ fun GameScreen(
     }
 }
 
+/**
+ * 竖屏布局
+ *
+ * 组件从上到下依次为：计分板、游戏棋盘、游戏状态覆盖层
+ */
 @Composable
 private fun PortraitLayout(
     gameState: GameState,
@@ -199,6 +218,11 @@ private fun PortraitLayout(
     }
 }
 
+/**
+ * 横屏布局
+ *
+ * 左右分布：左侧计分板，中间游戏棋盘，右侧预览和按钮
+ */
 @Composable
 private fun LandscapeLayout(
     gameState: GameState,
@@ -256,6 +280,17 @@ private fun LandscapeLayout(
     }
 }
 
+/**
+ * 故障风格文字组件
+ *
+ * 通过偏移的红色和青色图层产生故障艺术效果
+ *
+ * @param text 显示的文本
+ * @param modifier 修饰符
+ * @param color 主颜色
+ * @param fontSize 字体大小
+ * @param textAlign 文字对齐方式
+ */
 @Composable
 private fun GlitchText(
     text: String,
@@ -293,6 +328,14 @@ private fun GlitchText(
     }
 }
 
+/**
+ * 游戏状态覆盖层
+ *
+ * 根据游戏状态显示不同的 UI：
+ * - IDLE: 开始游戏按钮
+ * - GAME_OVER: 游戏结束信息 + 重玩按钮
+ * - PLAYING/PAUSED: 无显示
+ */
 @Composable
 private fun GameStateOverlay(
     gameState: GameState,
@@ -339,6 +382,16 @@ private fun GameStateOverlay(
     }
 }
 
+/**
+ * 赛博朋克风格按钮
+ *
+ * 发光边框的霓虹按钮
+ *
+ * @param text 按钮文字
+ * @param onClick 点击回调
+ * @param glowColor 发光颜色
+ * @param modifier 修饰符
+ */
 @Composable
 private fun CyberpunkButton(
     text: String,

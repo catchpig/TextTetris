@@ -4,6 +4,11 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
 
+/**
+ * 游戏记录数据访问对象（DAO）
+ *
+ * 定义游戏记录表的数据库操作
+ */
 @Dao
 interface GameRecordDao {
     @Insert
